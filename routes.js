@@ -2,8 +2,12 @@ var express = require("express")
 var router = express.Router();
 
 router.get("/", function(req, res){
-  console.log("I am the basic view here - start page.")
-  res.render("index");
+  res.render("home/index");
+
+})
+
+router.get("/home", function(req, res){
+  res.render("home/home");
 
 })
 
